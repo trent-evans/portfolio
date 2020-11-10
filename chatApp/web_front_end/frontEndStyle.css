@@ -1,0 +1,60 @@
+body{
+    background-color: linen;
+}
+
+h1{
+    text-align: center;
+    color: yellow;
+    background-color: mediumturquoise;
+}
+
+h2{
+    text-align: center;
+}
+
+#messageBoardDiv{
+    overflow: scroll;
+    overflow-y: auto;
+    width: 100%;
+    height: 75%;
+    padding-bottom: 55px;
+}
+
+#inputMessageDiv{
+    background-color: mediumturquoise;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+}
+
+#messageInputBox{
+    width: 85%;
+    height: 10px;
+    padding: 10px 10px;
+    margin: 10px;
+}
+
+.newMessage{
+    background-color: lightcoral;
+    text-align: right;
+    padding: 5px 5px;
+    margin: 5px;
+    width: 75%;
+    float: right;
+}
+
+.otherUserMessage{
+    background-color: lightgreen;
+    text-align: left;
+    padding: 5px 5px;
+    margin: 5px;
+    width: 75%;
+    float: left;
+}
+
+.newUserAdded{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}

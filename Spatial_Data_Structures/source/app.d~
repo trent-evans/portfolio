@@ -1,0 +1,36 @@
+import std.stdio;
+
+import common;
+import bucketknn;
+import kdtree;
+import quadtree;
+import dumbknn;
+
+void main()
+{
+
+    //because dim is a "compile time parameter" we have to use "static foreach"
+    //to loop through all the dimensions we want to test.
+    //the {{ are necessary because this block basically gets copy/pasted with
+    //dim filled in with 1, 2, 3, ... 7.  The second set of { lets us reuse
+    //variable names.
+    static foreach(dim; 1..8){{
+        //get points of the appropriate dimension
+        auto trainingPoints = getGaussianPoints!dim(1000);
+        auto testingPoints = getUniformPoints!dim(100);
+        auto kd = DumbKNN!dim(trainingPoints);
+        writeln("tree of dimension ", dim, " built");
+        StopWatch sw;
+        sw.start;
+        foreach(const ref qp; testingPoints){
+            kd.knnQuery(qp, 10);
+        }
+        writeln(dim, sw.peek.total!"usecs"); //output the time elapsed in microseconds
+        //NOTE, I SOMTEIMS GOT TOTALLY BOGUS TIMES WHEN TESTING WITH DMD
+        //WHEN YOU TEST WITH LDC, YOU SHOULD GET ACCURATE TIMING INFO...
+    }}
+    
+    
+}
+
+
