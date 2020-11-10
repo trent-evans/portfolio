@@ -9,4 +9,4 @@ Beyond just learning about these data structures I had the opportunity to implem
 
 ## What each structure is
 
-Spatial partitioning data structures do some really cool things, but they're not necessarily widely known.  
+### [BucketKNN](source/bucketknn.d)
