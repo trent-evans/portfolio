@@ -138,8 +138,8 @@ public IActionResult GetAssignmentCategories(string subject, int num, string sea
                         on course.CatalogId equals cls.CatalogId into join1
 
                         from j1 in join1
-                        join assCat in db.AssignmentCategories
-                        on j1.CId equals assCat.CId into join2
+                        join assignCat in db.AssignmentCategories
+                        on j1.CId equals assignCat.CId into join2
 
                         from j2 in join2
                         select new
@@ -323,8 +323,8 @@ public IActionResult GetSubmissionsToAssignment(string subject, int num, string 
                         on course.CatalogId equals cls.CatalogId into join1
 
                         from j1 in join1
-                        join assCat in db.AssignmentCategories.Where(x => x.Type == category)
-                        on j1.CId equals assCat.CId into join2
+                        join assignCat in db.AssignmentCategories.Where(x => x.Type == category)
+                        on j1.CId equals assignCat.CId into join2
 
                         from j2 in join2
                         join assign in db.Assignments.Where(x => x.Name == asgname)
@@ -373,8 +373,8 @@ public IActionResult GradeSubmission(string subject, int num, string season, int
                             on course.CatalogId equals cls.CatalogId into join1
 
                             from j1 in join1
-                            join assCat in db.AssignmentCategories.Where(x => x.Type == category)
-                            on j1.CId equals assCat.CId into join2
+                            join assignCat in db.AssignmentCategories.Where(x => x.Type == category)
+                            on j1.CId equals assignCat.CId into join2
 
                             from j2 in join2
                             join assign in db.Assignments.Where(x => x.Name == asgname)

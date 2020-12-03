@@ -59,8 +59,8 @@ public IActionResult GetMyClasses(string uid)
                         select cls;
 
             var query2 = from j1 in query
-                            join assCat in db.AssignmentCategories on j1.CId equals assCat.CId
-                            select assCat;
+                            join assignCat in db.AssignmentCategories on j1.CId equals assignCat.CId
+                            select assignCat;
 
             var query3 = from j2 in query2
                             join assign in db.Assignments on j2.AcId equals assign.AcId
@@ -115,8 +115,8 @@ public IActionResult GetMyClasses(string uid)
                         join cls in db.Classes.Where(x => x.Semester == semesterFull)
                         on course.CatalogId equals cls.CatalogId into join1
                         from j1 in join1
-                        join assCat in db.AssignmentCategories.Where(x => x.Type == category)
-                        on j1.CId equals assCat.CId into join2
+                        join assignCat in db.AssignmentCategories.Where(x => x.Type == category)
+                        on j1.CId equals assignCat.CId into join2
                         from j2 in join2
                         join assign in db.Assignments.Where(x => x.Name == asgname)
                         on j2.AcId equals assign.AcId into join3

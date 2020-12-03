@@ -7,7 +7,7 @@ As part of an school assignment, I built a basic functional chat app that would 
 The [front end](web_front_end) was built mostly using DOM Manipulation in Javascript.  I also built an extremely simple [Android app](android_app) that would also communicate with the server.  Included in this repo are a couple sreenshots of the [web interface](screenshots/web) as well as complimentary screenshots of the interaction between [the web client and Android app](screenshots/android)
 
 ### Back End
-The back end was a little more interesting and varied.  I built multi-threaded back end servers in three different ways: [manually in Java](my_server), [using Node.js](node_server), 3) using [Spring](spring_server).  It was interesting to learn about and use each of these methods because of the differences inherent in each one as well as discovering how there are different methods for accomplishing the same thing, depending on the level of depth and detail that I want to get into.
+The back end was a little more interesting and varied.  I built multi-threaded back end servers in three different ways: 1) [manually in Java](my_server), 2) [using Node.js](node_server), 3) using [Spring](spring_server).  It was interesting to learn about and use each of these methods because of the differences inherent in each one as well as discovering how there are different methods for accomplishing the same thing, depending on the level of depth and detail that I want to get into.
 
 
 ## What I would change/add

@@ -107,8 +107,8 @@ public IActionResult GetAssignmentContents(string subject, int num, string seaso
                     on course.CatalogId equals cls.CatalogId into join1
 
                     from j1 in join1.DefaultIfEmpty()
-                    join assCat in db.AssignmentCategories.Where(x => x.Type == category)
-                    on j1.CId equals assCat.CId into join2
+                    join assignCat in db.AssignmentCategories.Where(x => x.Type == category)
+                    on j1.CId equals assignCat.CId into join2
 
                     from j2 in join2.DefaultIfEmpty()
                     join assign in db.Assignments.Where(x => x.Name == asgname)
@@ -146,8 +146,8 @@ public IActionResult GetSubmissionText(string subject, int num, string season, i
                     on course.CatalogId equals cls.CatalogId into join1
 
                     from j1 in join1
-                    join assCat in db.AssignmentCategories.Where(x => x.Type == category)
-                    on j1.CId equals assCat.CId into join2
+                    join assignCat in db.AssignmentCategories.Where(x => x.Type == category)
+                    on j1.CId equals assignCat.CId into join2
 
                     from j2 in join2
                     join assign in db.Assignments.Where(x => x.Name == asgname)
