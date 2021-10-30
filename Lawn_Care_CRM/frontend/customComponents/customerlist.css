@@ -1,0 +1,9 @@
+#new-customer-button{
+    margin-top: 5px;
+}
+
+.customer-list-group{
+    margin-top: 5px;
+    overflow: scroll;
+    max-height: 580px;
+}

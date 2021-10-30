@@ -1,0 +1,11 @@
+.detail_card{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5px;
+    width: 98%;
+}
+
+.card_half_column{
+    float: left;
+    width: 50%;
+}
