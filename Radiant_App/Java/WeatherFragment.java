@@ -32,7 +32,6 @@ import java.util.Scanner;
 public class WeatherFragment extends Fragment {
 
     private DecimalFormat decimalFormat = new DecimalFormat("###.#");
-    private final String weatherString = "ea0c23cbfbdeebca2a2d769f425c84ed";
     private final String urlBase = "https://api.openweathermap.org/data/2.5/weather?zip=";
     ImageView weatherpic;
     TextView weatherDescriptionTV;
