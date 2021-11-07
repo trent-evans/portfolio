@@ -11,6 +11,12 @@ construction.  If they are, feel free to peruse the code and reach out to me if 
 
 </p>
 
+* [Lawn Care CRM](Lawn_Care_CRM)
+    - Languages: Go (backend), React/React-Bootstrat (frontend)
+    - Created a system for tracking work performed at different customers' properties for my landscaping business.  Also created automated bill generation after jobs were marked as complete in the system.  
+* [Radiant App](Radiant_App)
+    - Languages: Java, XML
+    - Worked on/led a team in developing a lifestyle Android app that would track user information and activity as well as inform them about local weather and hikes
 * [Learning Management System](LMS)
     - Languages: C#/.NET, MySQL
     - Worked with a partner to implement the information storage, retrieval, and editing for a learning management system.

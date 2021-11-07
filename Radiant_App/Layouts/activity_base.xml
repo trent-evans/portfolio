@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+    android:clickable="true"
+    tools:context=".BaseActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    //main layout
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/appBarLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout2">
+
+        //profile button layout
+
+        <LinearLayout
+            android:id="@+id/layout_profile"
+            android:layout_width="match_parent"
+            android:layout_height="89dp"
+            android:clickable="true"
+            android:duplicateParentState="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <ImageButton
+                android:id="@+id/profile_icon"
+                android:layout_width="92dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:clickable="false"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/profile" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="89dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                android:background="@color/color1"
+                android:clickable="false"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Edit Profile Information"
+                android:textAppearance="@style/basePageFont" />
+
+<!--            <ImageButton-->
+<!--                android:id="@+id/temp_profile_picture"-->
+<!--                android:layout_width="75dp"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:layout_marginTop="0dp"-->
+<!--                android:layout_marginEnd="8dp"-->
+<!--                android:layout_marginRight="0dp"-->
+<!--                android:adjustViewBounds="true"-->
+<!--                android:clickable="false"-->
+<!--                android:scaleType="centerCrop"-->
+<!--                app:srcCompat="@drawable/blank_profile" />-->
+        </LinearLayout>
+
+        //BMI button Layout
+
+        <LinearLayout
+            android:id="@+id/bmi_layout"
+            android:layout_width="match_parent"
+            android:layout_height="89dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <ImageButton
+                android:id="@+id/bmi"
+                android:layout_width="92dp"
+                android:layout_height="89dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:clickable="false"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/bmi" />
+
+            <TextView
+                android:id="@+id/bmi_text"
+                android:layout_width="wrap_content"
+                android:layout_height="89dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                android:background="@color/color2"
+                android:clickable="false"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="BMI"
+                android:textAppearance="@style/basePageFont" />
+
+        </LinearLayout>
+
+        //Calorie button layout
+
+        <LinearLayout
+            android:id="@+id/calorie_layout"
+            android:layout_width="match_parent"
+            android:layout_height="89dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <ImageButton
+                android:id="@+id/calorie"
+                android:layout_width="92dp"
+                android:layout_height="89dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:clickable="false"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/calories" />
+
+            <TextView
+                android:id="@+id/calorie_text"
+                android:layout_width="wrap_content"
+                android:layout_height="89dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                android:background="@color/color3"
+                android:clickable="false"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Calorie Estimator"
+                android:textAppearance="@style/basePageFont" />
+        </LinearLayout>
+
+        //Hike button layout
+
+        <LinearLayout
+            android:id="@+id/hike_layout"
+            android:layout_width="match_parent"
+            android:layout_height="89dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <ImageButton
+                android:id="@+id/hikes"
+                android:layout_width="92dp"
+                android:layout_height="89dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:clickable="false"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/hikes" />
+
+            <TextView
+                android:id="@+id/hike_text"
+                android:layout_width="wrap_content"
+                android:layout_height="89dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                android:background="@color/color4"
+                android:clickable="false"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Hikes Near Me"
+                android:textAppearance="@style/basePageFont" />
+        </LinearLayout>
+
+        //weather button layout
+
+        <LinearLayout
+            android:id="@+id/weather_layout"
+            android:layout_width="match_parent"
+            android:layout_height="89dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <ImageButton
+                android:id="@+id/weather"
+                android:layout_width="92dp"
+                android:layout_height="89dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:clickable="false"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/weather" />
+
+            <TextView
+                android:id="@+id/weather_text"
+                android:layout_width="wrap_content"
+                android:layout_height="89dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                android:background="@color/color5"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Weather Around Me"
+                android:textAppearance="@style/basePageFont"
+
+                />
+        </LinearLayout>
+
+        //step button layout
+
+        <LinearLayout
+            android:id="@+id/step_layout"
+            android:layout_width="match_parent"
+            android:layout_height="89dp"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <ImageButton
+                android:id="@+id/step"
+                android:layout_width="92dp"
+                android:layout_height="89dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:clickable="false"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/pedometer" />
+
+            <TextView
+                android:id="@+id/step_text"
+                android:layout_width="wrap_content"
+                android:layout_height="89dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="1"
+                android:background="@color/color6"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Pedometer"
+                android:textAppearance="@style/basePageFont"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/profile_pic_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/appBarLayout2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

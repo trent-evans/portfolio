@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color5"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    >
+
+    <TextView
+        android:id="@+id/weatherDescriptionTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Weather Fragment"
+        android:textColor="@android:color/white"
+        android:textSize="32dp" />
+
+
+    <ImageView
+        android:id="@+id/weatherPic"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        />
+
+    <TextView
+        android:id="@+id/temperatureHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Current Temp:"
+        android:textSize="24dp"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="8dp"
+         />
+    <TextView
+        android:layout_marginTop="8dp"
+        android:id="@+id/temperatureTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="24dp"
+        android:text="placeholder"
+        android:layout_marginLeft="8dp"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginLeft="8dp"
+
+        >
+        <TextView
+            android:id="@+id/feelsLikeHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(Feels Like: "
+            android:gravity="right"
+            android:textSize="18dp"
+            android:textColor="@android:color/white"
+            />
+        <TextView
+            android:id="@+id/feelsLikeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="placeholder"
+            android:layout_gravity="left"
+            android:textSize="18dp"
+            android:textColor="@android:color/white"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginLeft="8dp"
+        >
+        <TextView
+            android:id="@+id/humidityHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Humidity: "
+            android:textSize="18dp"
+            android:textColor="@android:color/white"
+            />
+        <TextView
+            android:id="@+id/humidityText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="placeholder"
+            android:textSize="18dp"
+            android:textColor="@android:color/white"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="8dp"
+            >
+
+            <TextView
+                android:id="@+id/tempMinHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:text="Min. Temp:"
+                android:textColor="@android:color/white"
+                />
+            <TextView
+                android:id="@+id/tempMinTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="placeholder"
+                android:textColor="@android:color/white"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginLeft="40dp"
+            >
+
+            <TextView
+                android:id="@+id/tempMaxHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:text="Max. Temp:"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                />
+            <TextView
+                android:id="@+id/tempMaxTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="placeholder"
+                android:textColor="@android:color/white"
+
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
